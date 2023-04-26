@@ -25,22 +25,36 @@ body {
 }
 
 ul {
-  padding: 10px;
+  list-style: none;
+  padding: 0;
 }
 
 li {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 
 img {
   display: block;
+  margin-top: 30px;
+  padding: 0;
 }
 
-/* .country-list {
-
+.country-list li {
+  display: flex;
+  gap: 20px;
 }
 
 .country-info {
+  display: flex;
+  flex-direction: column;
+}
 
-} */
+.country-info p {
+  font-size: 30px;
+  display: inline-block;
+}
+
+.country-info li:not(:last-child) {
+  margin-bottom: 20px;
+}

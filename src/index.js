@@ -32,9 +32,11 @@ function onInput(evt) {
         }
     })
     .catch(err => {
-        if(err.message === '404') {
+        if(err.message === '404')
+        console.log(err); {
             Notiflix.Notify.failure('Oops, there is no country with that name');
         }
+        
     });
 }
 
